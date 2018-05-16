@@ -93,4 +93,6 @@ class ViewController:UIViewController{
 }
 
 let vc = ViewController()
-PlaygroundPage.current.liveView = vc
+rvc = UINavigationController(rootViewController:vc)
+vc.navigationController?.isNavigationBarHidden = true
+PlaygroundPage.current.liveView = rvc
